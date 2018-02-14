@@ -1,0 +1,91 @@
+#nav {
+    background: #6CADDC !important;
+    color: white;
+    border-radius: 0px;
+    margin: 0;
+    height: 50px;
+}
+
+#score {
+    float: right;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  .shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  .navbar {
+    background: #5133a4;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    color: #fff;
+    font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+    white-space: nowrap;
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    display: inline-block;
+    padding: 0;
+    width: 33.3%;
+    text-align: center;
+}
+
+
+#main, #main>div, body, html {
+    height: 10%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+article, aside, footer, header, nav, section {
+    display: block;
+}
+
+#reset-link {
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+#reset-link:hover {
+    color: lightgrey;
+}

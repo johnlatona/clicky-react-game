@@ -1,0 +1,11 @@
+#jumbotron {
+    background: url("./spiration_dark.png");
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    left: 0px;
+    border-radius: 0px;
+    z-index: 50;
+}
