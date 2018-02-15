@@ -8,6 +8,6 @@ Clicky React Game is a fun dive in to react.js front-end functionality and state
 
 ## Technologies Used
 
-React.js
-CSS
-JSX
+- React.js
+- CSS
+- JSX
