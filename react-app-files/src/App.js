@@ -23,6 +23,7 @@ class App extends React.Component {
   }
 
   resetGame = () => {
+    //maps over this.state.images and changes all of the wasClicked and wasSelected properties to false.
     this.state.images.map(image => image.wasClicked = false);
     this.state.images.map(image => image.wasSelected = false);
     this.shuffleImages();
@@ -34,6 +35,7 @@ class App extends React.Component {
   }
 
   handleClick = (thisId) => {
+    //updates the wasClicked property of the clicked image when it is clicked. This tracks whether or not an image was clicked. If an image is clicked again, the game resets and the player loses the game 
     console.log(thisId);
     for(let i = 0; i < this.state.images.length; i++) {
       let element = this.state.images[i];
@@ -41,6 +43,8 @@ class App extends React.Component {
         if(element.wasClicked === false) {
           element.wasClicked = true;
           this.setState({choiceMessage: "You chose correctly!"})
+
+          //if the score increments, if the score is greater than the top score, the top score increments as well. 
           if(this.state.score >= this.state.topScore) {
             this.setState({
               score: this.state.score + 1,
@@ -65,6 +69,7 @@ class App extends React.Component {
   }
 
   shuffleImages = () => {
+    //uses the Fisher-Yates shuffle algorithm to shuffle the images array
     this.state.images.map(image => image.wasShuffled = false);
     for(let i = images.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
