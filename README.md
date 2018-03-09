@@ -1,4 +1,4 @@
-# clicky-react-game
+# Clicky Game
 
 ## Overview
 
@@ -11,3 +11,7 @@ Clicky React Game is a fun dive in to react.js front-end functionality and state
 React.js
 CSS
 JSX
+
+## URL
+
+https://johnlatona.github.io/clicky-react-game/
