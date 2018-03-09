@@ -1,6 +1,7 @@
 import React from "react";
 import "./Jumbotron.css";
 
+//create the Jumbotron component
 const Jumbotron = props => (
     <div className="jumbotron" id="jumbotron">
         <h1>Clicky Game</h1>
